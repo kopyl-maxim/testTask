@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>REDSTONE</title>
+</head>
+<body>
+<div class="cursor"></div>
+<header>
+    <div class="container header__main__container">
+        <div class="logo__container">
+            <div class="logo">
+                <a href="./">
+                    <img src="img/logo.svg" alt=""/>
+                </a>
+            </div>
+            <div class='main__menu__button'>
+                <button class="menu__button">
+                    <span>
+                        <i class="button__arrow"></i>
+                    </span>
+                </button>
+                <div class="menu__text">
+                    <div>Меню</div>
+                    <!--                    <em>Закрити</em>-->
+                </div>
+            </div>
+        </div>
+        <nav class="navi__container">
+            <ul>
+                <li>портфоліо</li>
+                <li>послуги</li>
+                <li>брендинг</li>
+                <li>брендинг</li>
+            </ul>
+
+        </nav>
+        <div class="right__container">
+            <a class="phone__container">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5453 0V-0.1H16.4453H3.55469H3.45469V0V20V20.1H3.55469H16.4453H16.5453V20V0ZM15.1734 18.7281H4.82656V1.27188H15.1734V18.7281Z"
+                          stroke-width="0.2"></path>
+                    <path d="M8 15H12V17H8V15Z"></path>
+                </svg>
+                <span>+38 067 607 57 84</span>
+            </a>
+            <button class="btn open__popup" onclick={openModal()}>
+                задати запитання
+            </button>
+        </div>
+    </div>
+</header>
+<div class="modal__popup" id="modalOverlay">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill='' xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6 6L18 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </button>
+        <div class="popup__container">
+            <div class="popup__info__container">
+                <div class="container popup__info">
+                    <div class="popup__title">Розкажіть нам про свій проект, подумаємо над ним разом. Почніть з простого
+                        - просто напишіть нам
+                    </div>
+                    <form class="popup__form">
+                        <div class="popup__form__info">
+                            <div>
+                                <input type="text" name="name" placeholder="Ваше ім,я" class="name__input"/>
+                                <input type="tel"
+                                       oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                       name="phone"
+                                       placeholder="Ваш телефон"
+                                       class="phone__input"
+                                />
+                            </div>
+                            <input type="email" name="email" placeholder="Ваш email" class="email__input"/>
+                            <textarea name="mess" placeholder="Коротко опишіть свій проект"
+                                      class="info__textarea"></textarea>
+                        </div>
+                        <button type="submit" class="btn banner__button btn__submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <div class="container banner_container">
+        <div class="banner__left__container">
+            <div class="banner__title">
+                Сайти <b>.</b> App <b>.</b> Брендинг - Робимо складне простим
+            </div>
+            <div class="banner__button__container">
+                <a class="btn banner__button">наші роботи</a>
+            </div>
+            <div class="banner__img__group">
+                <a>
+                    <img src="img/clutchco.svg" alt=""/>
+                </a>
+                <a>
+                    <img src="img/green-awwwards.svg" alt=""/>
+                </a>
+                <a>
+                    <img src="img/itr_logo.svg" alt=""/>
+                </a>
+                <a>
+                    <img src="img/other.svg" alt=""/>
+                </a>
+            </div>
+        </div>
+        <div class="banner__right__container">
+            <div class="svg__container">
+                <div class="svg__wrapper type__2">
+                    <svg id="my-svg" viewBox="0 0 100 100" width="100%" height="100%"
+                         preserveAspectRatio="xMidYMid meet">
+                        <text x="50%" y="97%" stroke-width="1" text-anchor="middle">
+                            <tspan class="text__bold">18</tspan>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+            <div class="ege__title">РОКІВ ПЕРЕНОСИМО ВАШ БІЗНЕС ONLINE</div>
+        </div>
+    </div>
+</div>
+<div class="title__container">
+    <div class="container">
+        <div class="title__bold">Ефектні та ефективні веб і мобайл рішення із зануренням у ваш бізнес</div>
+        <div class="title__text">Ми знаємо болі у Вашій ніші! У нашому арсеналі є всі інструменти для їх вирішення:
+            аналіз, брендинг, розробка сайту, створення app і технічна підтримка.
+        </div>
+    </div>
+</div>
+<div class="categories__container">
+    <div class="container categories">
+        <div class="categories__item">
+            <a class="categories__link">
+                <div class="categories__title">Доставка їжі</div>
+                <span class="categories__img__container">
+                    <img class="categories__img" src="img/redstone-food-delivery.png" alt=""/>
+                </span>
+            </a>
+        </div>
+        <div class="categories__item">
+            <a class="categories__link">
+                <div class="categories__title">Будівництво</div>
+                <span class="categories__img__container">
+                    <img class="categories__img" src="img/category-img-6.png" alt=""/>
+                </span>
+            </a>
+        </div>
+        <div class="categories__item">
+            <a class="categories__link">
+                <div class="categories__title">APP</div>
+                <span class="categories__img__container">
+                    <img class="categories__img" src="img/category-img-5.png" alt=""/>
+                </span>
+            </a>
+        </div>
+        <div class="categories__item">
+            <a class="categories__link">
+                <div class="categories__title">WEB Solution</div>
+                <span class="categories__img__container">
+                    <img class="categories__img" src="img/category-img-8.webp" alt=""/>
+                </span>
+            </a>
+        </div>
+        <div class="categories__item">
+            <a class="categories__link">
+                <div class="categories__title">Авто</div>
+                <span class="categories__img__container">
+                    <img class="categories__img" src="img/redstone-auto.png" alt=""/>
+                </span>
+            </a>
+        </div>
+        <div class="categories__item">
+            <a class="categories__link">
+                <div class="categories__title">Брендування</div>
+                <span class="categories__img__container">
+                    <img class="categories__img" src="img/category-img-3.webp" alt=""/>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+<script src='js/script.js'></script>
+</body>
+</html>

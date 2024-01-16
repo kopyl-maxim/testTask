@@ -1,0 +1,77 @@
+@media (max-width: 1819px) {
+    header > .container {
+        height: 80px;
+    }
+
+    .ege__title {
+        font-size: 14px;
+    }
+    .navi__container {
+        display: flex;
+    }
+    .svg__wrapper.type__2 {
+        height: 335px;
+    }
+
+    .svg__wrapper {
+        height: 70px;
+    }
+
+    .banner {
+        height: calc(100vh - 100px);
+        min-height: 400px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 13px 26px;
+    }
+
+    .logo {
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .logo {
+        margin-right: 44px;
+    }
+
+    .navi__container {
+        display: flex;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navi__container {
+        display: none;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1819px) {
+    .container {
+        max-width: 1280px;
+    }
+}
